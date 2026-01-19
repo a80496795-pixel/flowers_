@@ -1,0 +1,133 @@
+/* ===== 🌸 MITSURI KANROJI CATEGORY STYLE 🌸 ===== */
+
+.mitsuri-bg {
+    min-height: 100vh;
+    padding: 50px 6%;
+    background: linear-gradient( 180deg, #fff0f6 0%, #f0fff7 100%);
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+
+/* ===== НЕТ ЦВЕТОВ ===== */
+
+.not-found {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #d63a5b;
+    margin-top: 120px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #10b981;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #d63a5b;
+    transform: scale(1.05);
+}
+
+
+/* ===== СЕТКА ===== */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+
+/* ===== КАРТОЧКА ===== */
+
+.mitsuri-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+    border-radius: 28px;
+    padding: 22px 20px 26px;
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(255, 143, 207, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+    transition: all 0.35s ease;
+}
+
+.mitsuri-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 30px 70px rgba(255, 143, 207, 0.45), 0 0 35px rgba(110, 231, 183, 0.35);
+}
+
+
+/* ===== ИЗОБРАЖЕНИЕ ===== */
+
+.mitsuri-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 22px;
+    margin-bottom: 15px;
+}
+
+
+/* ===== ТЕКСТ ===== */
+
+.mitsuri-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #d63a5b;
+}
+
+.mitsuri-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.mitsuri-card .habitat {
+    font-size: 0.85rem;
+    color: #059669;
+}
+
+
+/* ===== КНОПКА ===== */
+
+.mitsuri-btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff8fcf, #6ee7b7);
+    box-shadow: 0 12px 30px rgba(255, 143, 207, 0.45);
+    transition: all 0.3s ease;
+}
+
+.mitsuri-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 18px 40px rgba(110, 231, 183, 0.55);
+}
+
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 768px) {
+    .mitsuri-bg {
+        padding: 35px 5%;
+    }
+    .mitsuri-card img {
+        height: 180px;
+    }
+}
+
+
+}
+
+}
+
+}
+}

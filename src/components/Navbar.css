@@ -1,0 +1,1149 @@
+/* ===== 🌸 MITSURI KANROJI NAVBAR 🌸 ===== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 135deg, rgba(255, 240, 246, 0.9), rgba(236, 253, 245, 0.9));
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px rgba(255, 143, 207, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 28px 28px;
+}
+
+
+/* ===== ЛОГО ===== */
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff7ab6, #6ee7b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 18px rgba(255, 122, 182, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.logo-link h2:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===== ССЫЛКИ ===== */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #374151;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: linear-gradient(135deg, #ff8fcf, #6ee7b7);
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 143, 207, 0.45);
+}
+
+
+/* ===== ИЗБРАННОЕ ⭐ ===== */
+
+.mitsuri-btn-fav {
+    font-size: 1.1rem;
+    padding: 8px 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 18px rgba(255, 143, 207, 0.35);
+}
+
+.mitsuri-btn-fav:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+
+/* ===== ГОСТЬ / РЕГИСТРАЦИЯ ===== */
+
+.guest-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ffe4f1, #ecfdf5);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.guest-icon {
+    font-size: 1.1rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+
+/* ===== КНОПКА ТЕМЫ ===== */
+
+.theme-btn {
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff8fcf, #6ee7b7);
+    color: white;
+    box-shadow: 0 10px 25px rgba(255, 143, 207, 0.45);
+    transition: all 0.35s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.navbar.dark {
+    background: linear-gradient( 135deg, rgba(31, 41, 55, 0.95), rgba(6, 78, 59, 0.95));
+}
+
+.navbar.dark .nav-links li a {
+    color: #f9fafb;
+}
+
+.navbar.dark .guest-header {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+}
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+isplay: none;
+
+}
+
+}
+.nav-links {
+    display: none;
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+
+}
+display: none;
+
+}
+
+}
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}isplay: none;
+
+}
+
+}
+}
+
+}
+}
+
+}
+
+}
+}
+}
+}
+
+}
+
+}isplay: none;
+
+}
+
+}isplay: none;
+
+}
+
+}isplay: none;
+
+}
+
+}isplay: none;
+
+}
+
+}isplay: none;
+
+}
+
+}
+}
+
+}
+}
+
+}
+}
+}
+
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+display: none;
+
+}
+
+}
+display: none;
+
+}
+
+}
+}
+}
+
+}
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}
+
+}
+display: none;
+
+}
+
+}isplay: none;
+
+}
+
+}  .nav-links {
+        display: none;
+    }
+}
+
+
+}
+
+}       display: none;
+    }
+}

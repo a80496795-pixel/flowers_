@@ -1,0 +1,46 @@
+.footerContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerWave {
+    height: 50px;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+}
+
+.footerTitle {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.footerSubtitle {
+    font-size: 16px;
+    color: #555;
+}
+
+.contactList {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.contactItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contactIcon {
+    font-size: 24px;
+    color: #333;
+}
+
+.footerCopy {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
