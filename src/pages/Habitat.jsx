@@ -5,7 +5,6 @@ import "./Habitat.css";
 export default function Habitat() {
   const [filter, setFilter] = useState("Все");
   const [search, setSearch] = useState("");
-  const [dark, setDark] = useState(false);
 
   const habitats = [
     "Все",
@@ -25,7 +24,7 @@ export default function Habitat() {
   });
 
   return (
-    <div className={`page ${dark ? "dark" : ""}`}>
+    <div className="page">
       <header className="header">
         <h1>BloomVerse</h1>
 
@@ -35,10 +34,6 @@ export default function Habitat() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-
-        <button className="theme-btn" onClick={() => setDark(!dark)}>
-          {dark ? "Светлая" : "Тёмная"}
-        </button>
       </header>
 
       <div className="filters">

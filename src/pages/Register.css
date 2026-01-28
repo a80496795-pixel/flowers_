@@ -17,9 +17,6 @@
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Панда */
-
 .panda {
     position: relative;
     width: 140px;
@@ -92,16 +89,10 @@
     transition: transform 0.1s;
 }
 
-
-/* моргание */
-
 .panda .eye.blink {
     height: 4px;
     transition: height 0.1s;
 }
-
-
-/* щеки */
 
 .panda .cheek {
     width: 16px;
@@ -119,9 +110,6 @@
 .panda .cheek.right {
     right: 20px;
 }
-
-
-/* рот */
 
 .panda .mouth {
     width: 18px;
@@ -141,17 +129,11 @@
     transform: translateX(-50%) scaleX(1.2);
 }
 
-
-/* Заголовок */
-
 .register-card h2 {
     margin: 15px 0;
     color: #ff5fa2;
     font-family: "Poppins", sans-serif;
 }
-
-
-/* Форма */
 
 .register-card label {
     display: block;
@@ -190,9 +172,6 @@
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
-
-/* Разделитель */
 
 .divider {
     margin: 20px 0;
@@ -243,9 +222,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Текст регистрация */
-
 .signup-text {
     margin-top: 15px;
     font-size: 14px;
@@ -259,4 +235,42 @@
 
 .signup-text a:hover {
     text-decoration: underline;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+font-weight: bold;
+text-decoration: none;
+
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}   text-decoration: underline;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}signup-text a:hover {
+    text-decoration: underline;
+}signup-text a:hover {
+    text-decoration: underline;
+}   text-decoration: underline;
 }

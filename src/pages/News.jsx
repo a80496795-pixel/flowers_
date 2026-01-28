@@ -129,7 +129,6 @@ export default function News() {
                 <h3>{item.title}</h3>
                 <span className="date">{item.date}</span>
 
-                {/* Плавное раскрытие текста */}
                 <p className={isOpen ? "open" : ""}>
                   {isOpen ? item.full : item.short}
                 </p>

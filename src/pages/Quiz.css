@@ -33,7 +33,6 @@
     border: none;
     background: linear-gradient(135deg, #ffb3c6, #ff8fab);
     color: #000;
-    /* изменено с white на черный */
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
 }

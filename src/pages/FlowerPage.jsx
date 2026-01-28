@@ -1,72 +1,70 @@
-import { useParams, useNavigate } from "react-router-dom";
-  import { flowers } from "../data/flower";
-import { useFavorites } from "../context/FavoritesContext";
-import "./FlowerPage.css";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
+import { useNewFavorites } from "../context/NewFavoritesContext.jsx"; 
+import { flowerTypes } from "../data/flowerTypes";
+import "./flowerPage.css"; 
 
 export default function FlowerPage() {
-  const { id } = useParams();
+  const { category, id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
-  const { toggleFavorite } = useFavorites();
 
-  const current = flowers.find(f => String(f.id) === id);
+  let flower = location.state?.flower;
 
-  if (!current) {
-    return <h2 className="not-found">Цветок не найден</h2>;
+  if (!flower && category && id) {
+    const list = flowerTypes[category] || [];
+    flower = list.find((f) => String(f.id) === String(id));
   }
 
+  const { favorites, toggleFavorite } = useNewFavorites(); 
+
+  if (!flower) {
+    return (
+      <div className="flower-not-found">
+        <h2>Цветок не найден 😢</h2>
+        <button onClick={() => navigate(-1)}>Назад</button>
+      </div>
+    );
+  }
+
+  const isFavorite = favorites.some((f) => f.id === flower.id);
+  const description = flower.description || flower.full || flower.short;
+
   return (
-    <div className="flower-detail-page">
-      {/* Баннер */}
-      <div
-        className="flower-hero"
-        style={{ backgroundImage: `url(${current.image})` }}
-      >
-        <div className="flower-hero-overlay">
-          <h1>{current.name}</h1>
-          <p>Категория: {current.category}</p>
-          <p>Среда обитания: {current.habitat}</p>
-        </div>
+    <div className="flower-page">
+      <button className="back-btn" onClick={() => navigate(-1)}>← Назад</button>
+
+      <h1 className="flower-title">{flower.name}</h1>
+
+      <div className="favorite-container">
+        <button
+          className={`favorite-btn ${isFavorite ? "favorited" : ""}`}
+          onClick={() => toggleFavorite(flower)}
+        >
+          {isFavorite ? "⭐ Убрать из избранного" : "⭐ В избранное"}
+        </button>
       </div>
 
-      {/* Контент */}
-      <div className="flower-content">
-        <h2>Описание</h2>
-        <p className="description">{current.description}</p>
-
-        <div className="info-grid">
-          <div className="info-card">
-            <h3>Питание</h3>
-            <p>{current.food}</p>
-          </div>
-
-          <div className="info-card">
-            <h3>Образ жизни</h3>
-            <p>{current.lifeStyle}</p>
-          </div>
-        </div>
-
-        <h2>Интересные факты</h2>
-        <ul className="facts-list">
-          {current.facts.map((fact, i) => (
-            <li key={i}>{fact}</li>
-          ))}
-        </ul>
-
-        <div className="actions">
-          <button onClick={() => toggleFavorite(current)}>
-            ⭐ В избранное
-          </button>
-          <button className="back" onClick={() => navigate(-1)}>
-            Назад
-          </button>
-        </div>
+      <div className="flower-image-container">
+        <img
+          src={flower.image}
+          alt={flower.name}
+          className="flower-image"
+        />
       </div>
+
+      <p><strong>Среда:</strong> {flower.habitat}</p>
+      <p><strong>Описание:</strong> {description}</p>
+
+      {Array.isArray(flower.interestingFacts) && flower.interestingFacts.length > 0 && (
+        <>
+          <p><strong>Интересные факты:</strong></p>
+          <ul>
+            {flower.interestingFacts.map((fact, idx) => (
+              <li key={idx}>{fact}</li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 }
-
-
-
-
-
-

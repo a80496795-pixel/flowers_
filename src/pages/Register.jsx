@@ -4,35 +4,37 @@ import "./Register.css";
 import { useAuth } from "../contexts/AuthContext";
 
 export default function Register() {
-    const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const { register } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { register, loginWithGoogle } = useAuth();
 
-    // const handleRegister = (e) => {
-    //     e.preventDefault();
-    //     alert(`Регистрация: ${email}`);
-    // };
-    const handleRegister = async (e) => {
-  e.preventDefault();
-  try {
-    await register(email, password);
-    alert("Аккаунт создан!");
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    try {
+      await register(email, password);
+      alert("Аккаунт создан! Теперь вы можете войти.");
+    } catch (err) {
+      alert(err.message);
+    }
+  };
 
-  } catch (err) {
-    alert(err.message);
-  }
-};
+  const handleGoogle = async () => {
+    try {
+      await loginWithGoogle();
+      alert("Вы вошли через Google!");
+    } catch (err) {
+      alert(err.message);
+    }
+  };
 
-    return (
+  return (
         <div
             className="register-page"
             onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
         >
             <div className="register-card">
-
-            
                 <div className="panda">
                     <div className="ear left"></div>
                     <div className="ear right"></div>
@@ -62,33 +64,39 @@ export default function Register() {
                 <h2>Создать аккаунт</h2>
 
                 <form onSubmit={handleRegister}>
-                    <label>Email</label>
-                    <input
-                        type="email"
-                        placeholder="your@email.com"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="your@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
 
-                    <label>Пароль</label>
-                    <input
-                        type="password"
-                        placeholder="Пароль"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
+                  <label>Пароль</label>
+                  <input
+                    type="password"
+                    placeholder="Пароль"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
 
-                    <button type="submit" className="register-btn">Зарегистрироваться</button>
+                  <button type="submit" className="register-btn">
+                    Зарегистрироваться
+                  </button>
                 </form>
 
-                <div className="divider"><span>Или продолжить с</span></div>
+                <div className="divider">
+                  <span>Или продолжить с</span>
+                </div>
 
-                <button className="google-btn">Войти через Google</button>
+                <button type="button" className="google-btn" onClick={handleGoogle}>
+                  Войти через Google
+                </button>
 
                 <p className="login-text">
-                    Уже есть аккаунт? <Link to="/guest">Войти</Link>
+                  Уже есть аккаунт? <Link to="/guest">Войти</Link>
                 </p>
             </div>
         </div>

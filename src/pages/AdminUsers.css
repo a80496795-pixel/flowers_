@@ -1,0 +1,72 @@
+.admin-users {
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffb7d5);
+    border-radius: 28px;
+    min-height: 100%;
+}
+
+
+/* TITLE */
+
+.admin-users h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #ff4fa3;
+    font-weight: 700;
+}
+
+
+/* TABLE */
+
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+
+/* HEAD */
+
+.admin-table thead th {
+    text-align: left;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #ff9acb, #ff6fb1);
+    color: #fff;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+
+/* ROW */
+
+.admin-table tbody tr {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.admin-table tbody tr:hover {
+    transform: translateY(-4px);
+}
+
+
+/* CELL */
+
+.admin-table td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #ff4fa3;
+}
+
+
+/* EMPTY */
+
+.admin-users p {
+    text-align: center;
+    color: #ff4fa3;
+    font-size: 14px;
+    opacity: 0.8;
+}

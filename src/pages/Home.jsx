@@ -2,56 +2,80 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import habitatFlowers from "../data/habitatFlowers.json";
 import "./Home.css";
+import { useAdminData } from "../contexts/AdminDataContext";
+
+// Иконки
+import { FaSeedling, FaLeaf } from "react-icons/fa";
+import { GiFlowerPot } from "react-icons/gi";
 
 export default function Home({ search }) {
   const [expandedId, setExpandedId] = useState(null);
+  const { flowers } = useAdminData();
 
-
+  /* ================== НОВОСТИ ================== */
   const newsData = [
     {
       id: 1,
       title: "Открытие нового вида орхидей",
       date: "19 января 2026 г.",
-      image: "https://avatars.mds.yandex.net/i?id=2a0000019b85ce869565d58beaab259bfa23-1381050-fast-images&n=13",
-      short: "Ботаники обнаружили новый вид орхидеи в тропических лесах Юго-Восточной Азии.",
-      full: "Ботаники обнаружили новый вид орхидеи в тропических лесах Юго-Восточной Азии. Цветок отличается необычной формой лепестков и редким фиолетово-золотым оттенком.",
+      image:
+        "https://avatars.mds.yandex.net/get-entity_search/1244778/805384968/S600xU_2x",
+      short:
+        "Ботаники обнаружили новый вид орхидеи в тропических лесах Юго-Восточной Азии.",
+      full:
+        "Ботаники обнаружили новый вид орхидеи в тропических лесах Юго-Восточной Азии. Цветок отличается необычной формой лепестков и редким фиолетово-золотым оттенком.",
     },
     {
       id: 2,
       title: "Редкие тюльпаны снова зацвели",
       date: "19 января 2026 г.",
-      image: "https://avatars.mds.yandex.net/i?id=1d3c969198d163fc444e6568533d318b2c3ef10a2718102b-10636894-images-thumbs&n=13",
-      short: "В ботаническом саду удалось восстановить редкий сорт тюльпанов.",
-      full: "В ботаническом саду удалось восстановить редкий сорт тюльпанов, считавшийся исчезнувшим. Ученые использовали современные методы селекции и ухода.",
+      image:
+        "https://avatars.mds.yandex.net/i?id=1d3c969198d163fc444e6568533d318b2c3ef10a2718102b-10636894-images-thumbs&n=13",
+      short:
+        "В ботаническом саду удалось восстановить редкий сорт тюльпанов.",
+      full:
+        "В ботаническом саду удалось восстановить редкий сорт тюльпанов, считавшийся исчезнувшим.",
     },
     {
       id: 3,
       title: "Новая разновидность кактусов найдена в пустыне",
       date: "19 января 2026 г.",
-      image: "https://avatars.mds.yandex.net/i?id=255adfa23d30eb86b81b1c083d1cc9dd89c3dac0-13217575-images-thumbs&n=13",
-      short: "Исследователи нашли неизвестный вид кактуса в мексиканской пустыне.",
-      full: "В мексиканской пустыне ученые обнаружили новый вид кактуса с уникальной структурой стебля и необычными цветами, которые открываются только ночью.",
+      image:
+        "https://avatars.mds.yandex.net/i?id=255adfa23d30eb86b81b1c083d1cc9dd89c3dac0-13217575-images-thumbs&n=13",
+      short: "Исследователи нашли неизвестный вид кактуса.",
+      full:
+        "В мексиканской пустыне ученые обнаружили новый вид кактуса, который цветет только ночью.",
     },
   ];
 
+  const factList = [
+    "Растения умеют «общаться» между собой, выделяя химические вещества 🌱",
+    "Некоторые орхидеи меняют запах в зависимости от времени суток 🌸",
+    "Листья кактусов могут хранить воду месяцами 💧",
+    "Розы чувствуют смену дня и ночи 🌹",
+  ];
 
-  const factData = {
-    id: 1,
-    title: "Интересный факт дня",
-    image: "https://avatars.mds.yandex.net/i?id=0af155d6ca8f37f4962c951c98bc8178badb1ab4-10471586-images-thumbs&n=13",
-    text: `Слепые и глухие растения «разговаривают» друг с другом.
-Некоторые растения, например, клевер или подсолнух, выпускают химические вещества в воздух или через корни, когда их атакуют насекомые или болезни. Эти «сигналы тревоги» предупреждают соседние растения — и те начинают укреплять свои защитные механизмы!
-То есть растения как будто шепчут друг другу: «Эй, тут опасно, приготовься!» 😲`,
-    date: "8 января 2026 г.",
-  };
+  const [factIndex, setFactIndex] = useState(0);
+  const nextFact = () =>
+    setFactIndex((prev) => (prev + 1) % factList.length);
 
- 
+  /* ================== ВИКТОРИНА ================== */
   const quizQuestions = [
-    { question: "Какой цветок известен как 'король цветов'?", options: ["Роза", "Тюльпан", "Лилия", "Гвоздика"], answer: "Роза" },
-    { question: "Какой цветок символизирует чистоту?", options: ["Ромашка", "Лилия", "Орхидея", "Пион"], answer: "Лилия" },
-    { question: "Какой цветок называют 'солнечным'?", options: ["Подсолнух", "Нарцисс", "Роза", "Гиацинт"], answer: "Подсолнух" },
-    { question: "Какой цветок используется в парфюмерии?", options: ["Роза", "Тюльпан", "Сирень", "Анютины глазки"], answer: "Роза" },
-    { question: "Какой цветок открывается только ночью?", options: ["Лотос", "Кактус цветущий", "Ночная фиалка", "Орхидея"], answer: "Ночная фиалка" },
+    {
+      question: "Какой цветок называют королем цветов?",
+      options: ["Роза", "Лилия"],
+      answer: "Роза",
+    },
+    {
+      question: "Какой цветок символ чистоты?",
+      options: ["Лилия", "Тюльпан"],
+      answer: "Лилия",
+    },
+    {
+      question: "Цветок дружбы?",
+      options: ["Роза", "Гербера"],
+      answer: "Гербера",
+    },
   ];
 
   const [currentQuiz, setCurrentQuiz] = useState(0);
@@ -59,123 +83,140 @@ export default function Home({ search }) {
 
   const handleQuizClick = (option) => {
     if (option === quizQuestions[currentQuiz].answer) {
-      setQuizScore(quizScore + 1);
+      setQuizScore((s) => s + 1);
     }
-    setCurrentQuiz(currentQuiz + 1);
+    setCurrentQuiz((q) => q + 1);
   };
 
-  const animalData = {
-    id: 1,
-    name: "Эдельвейс",
-    image: "https://avatars.mds.yandex.net/i?id=3fda1ee7fede2f5fca39248a9b9b0b00bd42865a-12422165-images-thumbs&n=13",
-    habitat: "Горные склоны Кавказа и Алтая, каменистые почвы на высоте 1500–3000 м",
-    status: "Редкий и охраняемый вид",
-    description: "Символ альпинистов и горных регионов, цветок с белыми пушистыми лепестками, охраняется законом.",
-  };
+  const filteredFlowers = habitatFlowers.filter((f) =>
+    f.name.toLowerCase().includes(search?.toLowerCase() || "")
+  );
 
-  const filteredFlowers = habitatFlowers.filter(flower => {
-    const flowerName = flower?.name?.toLowerCase() || "";
-    const searchTerm = search?.toLowerCase() || "";
-    return flowerName.includes(searchTerm);
-  });
+  const popularFlowers = habitatFlowers.slice(0, 6);
+
 
   return (
     <div className="home">
-      <h1 className="home-title">Добро пожаловать в BloomVerse  🌸</h1>
+      <h1 className="home-title">Добро пожаловать в BloomVerse 🌸</h1>
 
       <Link to="/categories">
         <button className="start-btn">Начать изучать</button>
       </Link>
 
-   
       {search && (
         <section className="search-results">
-          <h2>Результаты поиска для: "{search}"</h2>
+          <h2>
+            <FaLeaf /> Результаты поиска
+          </h2>
           <div className="grid">
-            {filteredFlowers.length > 0 ? (
-              filteredFlowers.map(f => (
-                <div key={f.id} className="card">
-                  <img
-                    src={f.image || "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"}
-                    alt={f.name}
-                  />
-                  <h3>{f.name}</h3>
-                  <p>{f.description}</p>
-                </div>
-              ))
-            ) : (
-              <p>Ничего не найдено 😿</p>
-            )}
+            {filteredFlowers.map((f) => (
+              <div key={f.id} className="card flower-card">
+                <img src={f.image} alt={f.name} />
+                <h3>{f.name}</h3>
+                <p>{f.description}</p>
+              </div>
+            ))}
           </div>
         </section>
       )}
 
 
-      <section className="hello">
-        <h2>Новости дня</h2>
+      <section className="home-section news-section">
+        <h2>
+          <GiFlowerPot /> Новости дня
+        </h2>
         <div className="news-grid">
-          {newsData.map(item => (
+          {newsData.map((item) => (
             <div key={item.id} className="hello-card">
               <img src={item.image} alt={item.title} />
-              <span className="news-date">{item.date}</span>
-              <h3>{item.title}</h3>
-              <p>{expandedId === item.id ? item.full : item.short}</p>
-              <button
-                onClick={() => setExpandedId(expandedId === item.id ? null : item.id)}
-                className="green-btn"
-              >
-                {expandedId === item.id ? "Свернуть" : "Читать далее →"}
-              </button>
+              <div className="news-content">
+                <h3>{item.title}</h3>
+                <p>
+                  {expandedId === item.id ? item.full : item.short}
+                </p>
+                <button
+                  onClick={() =>
+                    setExpandedId(expandedId === item.id ? null : item.id)
+                  }
+                >
+                  Читать далее
+                </button>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-     
-      <section className="fact-day">
-        <h2>{factData.title}</h2>
-        <div className="card">
-          <img src={factData.image} alt="Факт дня" />
-          <div className="card-content">
-            <p>{factData.text}</p>
-            <span className="date">{factData.date}</span>
-          </div>
+  
+      <section className="home-section fact-day">
+        <h2>
+          <FaSeedling /> Интересный факт
+        </h2>
+        <p>{factList[factIndex]}</p>
+        <button onClick={nextFact}>Другой факт</button>
+      </section>
+
+  
+      <section className="home-section popular-flowers">
+        <h2>
+          <GiFlowerPot /> Популярные цветы
+        </h2>
+        <div className="home-flowers">
+          {popularFlowers.map((flower) => (
+            <div key={flower.id} className="home-flower-card">
+              <img src={flower.image} alt={flower.name} />
+              <h3>{flower.name}</h3>
+              <span>{flower.category}</span>
+            </div>
+          ))}
         </div>
       </section>
 
-    
-      <section className="animal-day">
-        <h2>Лепестки дня</h2>
-        <div className="card">
-          <img src={animalData.image} alt={animalData.name} />
-          <div className="card-content">
-            <h3>{animalData.name}</h3>
-            <p>🌍 {animalData.habitat}</p>
-            <p>⚠️ {animalData.status}</p>
-            <p>{animalData.description}</p>
-          </div>
-        </div>
-      </section>
+      <section className="home-section flower-quiz">
+        <h2>
+          <FaLeaf /> Викторина
+        </h2>
 
-   
-      <section className="flower-quiz">
-        <h2>Викторина по цветам 🌸</h2>
         {currentQuiz < quizQuestions.length ? (
-          <div className="quiz-card">
-            <h3>Вопрос {currentQuiz + 1} из {quizQuestions.length}</h3>
-            <p>{quizQuestions[currentQuiz].question}</p>
+          <>
+            <p>
+              Вопрос {currentQuiz + 1} из {quizQuestions.length}
+            </p>
+            <p className="quiz-question">
+              {quizQuestions[currentQuiz].question}
+            </p>
             <div className="quiz-options">
-              {quizQuestions[currentQuiz].options.map(option => (
-                <button key={option} onClick={() => handleQuizClick(option)}>
-                  {option}
+              {quizQuestions[currentQuiz].options.map((o) => (
+                <button key={o} onClick={() => handleQuizClick(o)}>
+                  {o}
                 </button>
               ))}
             </div>
-          </div>
+          </>
         ) : (
-          <div className="quiz-card">
-            <h3>Викторина окончена!</h3>
-            <p>Вы ответили правильно на {quizScore} из {quizQuestions.length} вопросов.</p>
+          <p className="quiz-result">
+            Результат: {quizScore} / {quizQuestions.length}
+          </p>
+        )}
+      </section>
+
+   
+      <section className="home-section admin-flowers-section">
+        <h2>
+          <GiFlowerPot /> цветы
+        </h2>
+
+        {flowers.length === 0 ? (
+          <p>Пока нет цветов 🌱</p>
+        ) : (
+          <div className="home-flowers">
+            {flowers.map((flower) => (
+              <div key={flower.id} className="home-flower-card">
+                <img src={flower.image} alt={flower.name} />
+                <h3>{flower.name}</h3>
+                <span>{flower.category}</span>
+              </div>
+            ))}
           </div>
         )}
       </section>

@@ -1,7 +1,10 @@
+html, body, #root {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
-    background: #ffeef3;
 }
 
 .page {

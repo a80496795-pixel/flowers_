@@ -1,36 +1,48 @@
-import { useEffect, useState } from "react";
-import { getFlowers } from "../api/flowersApi";
-import { getStored } from "../utils/storage";
-
+import { useNewFavorites } from "../context/NewFavoritesContext.jsx";
+import { useNavigate } from "react-router-dom";
+import "./Favorites.css";   
 
 export default function Favorites() {
-const [flowers, setFlowers] = useState([]);
+  const { favorites, toggleFavorite } = useNewFavorites();
+  const navigate = useNavigate();
 
+  if (favorites.length === 0) {
+    return <p style={{ padding: "2rem" }}>⭐ Избранное пусто</p>;
+  }
 
-useEffect(() => {
-getFlowers().then(data => {
-const favs = getStored("favorites");
-setFlowers(data.filter(f => favs[f.id]));
-});
-}, []);
-
-
-return (
-<div className="habitat-page">
-<h1 className="habitat-title">💖 Избранные цветы</h1>
-
-
-<div className="habitat-grid">
-{flowers.map(f => (
-<div className="flower-card" key={f.id}>
-<img src={f.image} alt={f.name} />
-<div className="flower-body">
-<h3>{f.name}</h3>
-<p>{f.habitat}</p>
-</div>
-</div>
-))}
-</div>
-</div>
-);
+  return (
+    <div className="favorites-page">
+      <h1>⭐ Избранные растения</h1>
+      <div className="favorites-grid">
+        {favorites.map(flower => (
+          <div key={flower.id} className="favorites-card">
+            <div className="image-container">
+              <img src={flower.image} alt={flower.name} />
+            </div>
+            <div className="card-info">
+              <h3>{flower.name}</h3>
+              <p className="latin-name">{flower.latinName}</p>
+              <p className="category">Категория: {flower.category}</p>
+            </div>
+            <div className="card-buttons">
+              <button
+                className="favorite active"
+                onClick={() => toggleFavorite(flower)}
+              >
+                ❌ Убрать
+              </button>
+              <button
+                className="details-btn"
+                onClick={() =>
+                  navigate(`/flower/${flower.id}`, { state: { flower } })
+                }
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

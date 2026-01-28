@@ -1,29 +1,35 @@
 .footerContainer {
-    background-color: #f2f2f2;
-    padding: 20px;
+    background: linear-gradient(135deg, #ffe6f3, #fdf2ff);
+    padding: 24px 16px 20px;
     text-align: center;
+    margin-top: auto;
 }
 
 .footerWave {
-    height: 50px;
+    height: 40px;
     background: linear-gradient(to right, #a8edea, #fed6e3);
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 10px;
 }
 
 .footerTitle {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 22px;
+    margin: 8px 0 4px;
+    color: #d63a5b;
+    font-weight: 700;
 }
 
 .footerSubtitle {
-    font-size: 16px;
-    color: #555;
+    font-size: 14px;
+    color: #6b4d4b;
 }
 
 .contactList {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin: 15px 0;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 16px 0 10px;
 }
 
 .contactItem {
@@ -31,16 +37,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
+    font-size: 13px;
+    color: #5a3e36;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contactItem:hover {
+    transform: translateY(-2px);
+    color: #d63a5b;
 }
 
 .contactIcon {
-    font-size: 24px;
-    color: #333;
+    font-size: 22px;
+    color: inherit;
 }
 
 .footerCopy {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #888;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #9b7b7b;
+}
+
+/* Тёмная тема для футера */
+body.dark .footerContainer {
+    background: linear-gradient(135deg, #1a1a24, #222233);
+}
+
+body.dark .footerWave {
+    background: linear-gradient(to right, #2a2a3a, #3a2a4a);
+}
+
+body.dark .footerTitle {
+    color: #ffe4f1;
+}
+
+body.dark .footerSubtitle,
+body.dark .footerCopy,
+body.dark .contactItem {
+    color: #ddd3e8;
+}
+
+body.dark .contactItem:hover {
+    color: #ff9acb;
 }

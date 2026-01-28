@@ -24,7 +24,10 @@ export default function FlowersByCategory() {
             <p className="text-gray-600 mb-1">{flower.short}</p>
             <p className="text-gray-500 mb-3"><b>Среда обитания:</b> {flower.habitat}</p>
 
-            <Link to={`/flower-catalog/${category}/${flower.id}`} className="mitsuri-btn bg-gradient-to-r from-pink-400 to-green-300 text-white px-4 py-2 rounded-full font-semibold">
+            <Link
+              to={`/flowers/${category}/${flower.id}`}
+              className="mitsuri-btn bg-gradient-to-r from-pink-400 to-green-300 text-white px-4 py-2 rounded-full font-semibold"
+            >
               Подробнее
             </Link>
           </div>

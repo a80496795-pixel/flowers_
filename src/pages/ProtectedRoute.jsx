@@ -3,5 +3,6 @@ import { useAuth } from "../contexts/AuthContext";
 
 export default function ProtectedRoute({ children }) {
   const { user } = useAuth();
-  return user ? children : <Navigate to="/login" />;
+  // Если не авторизован — отправляем на страницу входа гостя
+  return user ? children : <Navigate to="/guest" />;
 }

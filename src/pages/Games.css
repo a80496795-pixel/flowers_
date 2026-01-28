@@ -17,7 +17,6 @@
     padding: 30px;
     border-radius: 18px;
     background: linear-gradient(135deg, #ffffff, #f3fff7);
-    /* сделал градиент светлым/белым */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
@@ -26,13 +25,11 @@
 .result-card h2 {
     margin-bottom: 10px;
     color: #000000;
-    /* заголовки чёрные для контраста на белом фоне */
 }
 
 .game-card p,
 .result-card p {
     color: ;
-    /* текст теперь белый */
     margin-bottom: 25px;
 }
 
@@ -50,7 +47,6 @@
     min-width: 110px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
     color: black;
-    /* текст внутри карточек статистики чёрный */
 }
 
 .stat strong {
@@ -61,7 +57,6 @@
 .stat span {
     font-size: 13px;
     color: #555555;
-    /* светло-серый для подписи */
 }
 
 .start-btn {
@@ -44913,33 +44908,956 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -44947,25 +45865,75 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -44973,25 +45941,63 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
+    background: #ff4f90;
+    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45007,19 +46013,45 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
@@ -45030,25 +46062,50 @@ start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45057,94 +46114,100 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45152,30 +46215,35 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45186,25 +46254,29 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45213,22 +46285,32 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45241,29 +46323,45 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
@@ -45272,34 +46370,49 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45307,24 +46420,23 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45332,17 +46444,7 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45351,131 +46453,172 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
+}
+tart-btn:hover {
+    background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
-start-btn:hover {
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45486,53 +46629,49 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
@@ -45544,51 +46683,70 @@ start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
 }
-start-btn:hover {
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45605,50 +46763,69 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
-}tart-btn:hover {
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45660,23 +46837,34 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}tart-btn:hover {
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45687,22 +46875,29 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
@@ -45711,20 +46906,29 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}tart-btn:hover {
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
@@ -45740,32 +46944,44 @@ start-btn:hover {
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
 }
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }
@@ -45775,35 +46991,54 @@ start-btn:hover {
 }
 start-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
 }
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
+}
+transform: translateY(-2px);
+
 }
 start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}tart-btn:hover {
+}
+tart-btn:hover {
     background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
     transform: translateY(-2px);
-}   transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   background: #ff4f90;
-    transform: translateY(-2px);
-}   transform: translateY(-2px);
-}start-btn:hover {
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+background: #ff4f90;
+transform: translateY(-2px);
+
+}
+transform: translateY(-2px);
+
+}
+start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
-}start-btn:hover {
+}
+start-btn:hover {
     background: #ff4f90;
     transform: translateY(-2px);
 }

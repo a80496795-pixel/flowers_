@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google"; 
-import { useAuth } from "../contexts/AuthContext"; // ← подключаем Firebase Auth
+import { useAuth } from "../contexts/AuthContext"; 
 import "./Guest.css";
 
 export default function Guest() {
@@ -10,26 +10,25 @@ export default function Guest() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { login } = useAuth(); // Firebase login
+  const { login } = useAuth(); 
   const navigate = useNavigate();
 
-  // 🔹 Функция входа через email/password
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await login(email, password);
       alert("Вы вошли!");
-      navigate("/admin"); // редирект на админку
+      navigate("/admin"); 
     } catch (err) {
       alert(err.message);
     }
   };
 
-  // 🔹 Google login (можно подключить к Firebase позже)
+
   const handleLoginSuccess = (credentialResponse) => {
     console.log("Успешный вход через Google!", credentialResponse);
     alert("Успешный вход через Google!");
-    // credentialResponse.credential — JWT, можно отправить на backend
   };
 
   const handleLoginError = () => {
@@ -44,7 +43,7 @@ export default function Guest() {
     >
       <div className="login-card">
 
-        {/* Панда */}
+   
         <div className="panda">
           <div className="ear left"></div>
           <div className="ear right"></div>
@@ -103,7 +102,7 @@ export default function Guest() {
           <span>Или продолжить с</span>
         </div>
 
-        {/* Google кнопка */}
+     
         <div className="google-login">
           <GoogleLogin
             onSuccess={handleLoginSuccess}

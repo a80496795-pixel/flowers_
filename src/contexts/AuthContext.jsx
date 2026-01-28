@@ -1,39 +1,66 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import { auth } from "../firebase";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
   onAuthStateChanged,
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signOut
+  createUserWithEmailAndPassword,
+  signOut,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
+import { auth } from "../firebase";
 
-const AuthContext = createContext();
-export const useAuth = () => useContext(AuthContext);
+const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Следим за состоянием Firebase‑пользователя
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, currentUser => {
-      setUser(currentUser);
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      if (firebaseUser) {
+        const isAdmin = firebaseUser.email === "admin@test.com";
+        setUser({
+          uid: firebaseUser.uid,
+          email: firebaseUser.email,
+          role: isAdmin ? "admin" : "user",
+        });
+      } else {
+        setUser(null);
+      }
       setLoading(false);
     });
-    return unsubscribe;
+
+    return () => unsubscribe();
   }, []);
 
-  // Регистрация
-  const register = (email, password) => createUserWithEmailAndPassword(auth, email, password);
+  const login = async (email, password) => {
+    await signInWithEmailAndPassword(auth, email, password);
+  };
 
-  // Вход
-  const login = (email, password) => signInWithEmailAndPassword(auth, email, password);
+  const register = async (email, password) => {
+    await createUserWithEmailAndPassword(auth, email, password);
+  };
 
-  // Выход
-  const logout = () => signOut(auth);
+  const loginWithGoogle = async () => {
+    const provider = new GoogleAuthProvider();
+    await signInWithPopup(auth, provider);
+  };
 
-  return (
-    <AuthContext.Provider value={{ user, register, login, logout }}>
-      {!loading && children}
-    </AuthContext.Provider>
-  );
+  const logout = async () => {
+    await signOut(auth);
+  };
+
+  const value = {
+    user,
+    loading,
+    login,
+    register,
+    loginWithGoogle,
+    logout,
+  };
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
+
+export const useAuth = () => useContext(AuthContext);

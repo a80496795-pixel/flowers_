@@ -38,8 +38,6 @@ font-family: "Segoe UI",
 sans-serif;
 
 }
-
-/* 🌸 Image */
 .hello-modal .image-container {
     position: relative;
 }
@@ -49,8 +47,6 @@ sans-serif;
     object-fit: cover;
     margin-bottom: 15px;
 }
-
-/* 🌸 Date */
 .hello-modal .news-date {
     font-size: 0.85rem;
     color: #fff;
@@ -61,23 +57,17 @@ sans-serif;
     top: 10px;
     right: 10px;
 }
-
-/* 🌸 Title */
 .hello-modal h3 {
     font-size: 1.3rem;
     color: #cc4f85;
     margin: 10px 0 15px 0;
     font-weight: 600;
 }
-
-/* 🌸 Full text */
 .hello-modal p {
     font-size: 1rem;
     color: #4a3a3a;
     line-height: 1.6;
 }
-
-/* 🌸 Close button */
 .hello-modal .close-btn {
     position: absolute;
     top: 10px;
@@ -90,5 +80,13 @@ sans-serif;
     transition: color 0.2s;
 }
 .hello-modal .close-btn:hover {
+    color: #d94f8c;
+}hello-modal .close-btn:hover {
+    color: #d94f8c;
+}hello-modal .close-btn:hover {
+    color: #d94f8c;
+}hello-modal .close-btn:hover {
+    color: #d94f8c;
+}hello-modal .close-btn:hover {
     color: #d94f8c;
 }
