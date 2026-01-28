@@ -1,65 +1,78 @@
+/* PAGE CONTAINER */
+
 .p-6 {
-    padding: 1.5rem;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #fff0f6, #ffd1e8);
+    min-height: 100vh;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+
+/* TITLE */
+
+.p-6 h1 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: #e6007e;
-    text-shadow: 1px 1px 2px #ffe0f0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ff4fa3;
+    margin-bottom: 30px;
 }
+
+
+/* GRID */
 
 .grid {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
-@media (min-width: 640px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+
+/* CARD */
 
 .card {
+    background: linear-gradient(135deg, #ff9acb, #ffd1e8);
+    border-radius: 22px;
+    width: 140px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
-    background: linear-gradient(145deg, #ffd6e8, #ffe0f0);
-    border-radius: 1rem;
     text-decoration: none;
-    color: #333;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(145deg, #ffb6d9, #ffc6e1);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.45);
 }
+
+
+/* ICON */
 
 .card span {
-    font-size: 3rem;
-    transition: transform 0.3s ease;
+    font-size: 36px;
+    margin-bottom: 8px;
 }
 
-.card:hover span {
-    transform: scale(1.2);
-}
+
+/* NAME */
 
 .card h2 {
-    margin-top: 0.5rem;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 16px;
+    text-align: center;
 }
 
-font-size: 36px;
-margin-bottom: 8px;
+
+}
+
+}
+argin-bottom: 8px;
 
 }
 
@@ -72,20 +85,7 @@ margin-bottom: 8px;
 }
 
 }
-margin: 0;
 
-/* убрать лишние дефолтные отступы */
-
-}
-font-size: 36px;
-margin-bottom: 8px;
-
-}
-
-/* NAME */
-.card h2 {
-    font-size: 16px;
-    text-align: center;
 }
 
 }
@@ -1699,6 +1699,133 @@ argin-bottom: 8px;
 
 }
 
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
 }
 
 }

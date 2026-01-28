@@ -19,20 +19,14 @@ export default function CategoryDetail() {
   if (!categoryFlowers.length) {
     return (
       <div className="category-details-bg">
-        <h2 className="not-found">🌱 Данные для этой категории отсутствуют</h2>
+        <h2 className="not-found">🌱 Данные для этой {id} категории отсутствуют</h2>
       </div>
     );
-  }
-
-  const title =
-    id.charAt(0).toUpperCase() + id.slice(1);
-
-  return (
+  } return (
     <div className="category-details-bg">
       <h1 className="category-title">
-        🌸 {title} 🌸
+        🌸 {id} 🌸
       </h1>
-
       <div className="category-grid">
         {categoryFlowers.map((flower) => (
           <div key={flower.id} className="category-card">
