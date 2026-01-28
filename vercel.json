@@ -1,4 +1,4 @@
-echo {
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist"
-} > vercel.json
+﻿{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
