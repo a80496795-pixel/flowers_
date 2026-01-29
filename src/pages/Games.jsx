@@ -6,8 +6,16 @@ function Games() {
   const [game, setGame] = useState(null);
   const [result, setResult] = useState(null);
 
+  // Функция, когда викторина закончена
   const handleFinish = (score) => {
     setResult(score);
+    setGame(null);
+  };
+
+  // Функция "Выйти из игры" — сразу показать результат
+  const handleExit = () => {
+    // Если игра активна, можно подсчитать баллы, либо просто 0
+    setResult(0); 
     setGame(null);
   };
 
@@ -15,6 +23,7 @@ function Games() {
     <div className="games-page">
       <h1 className="games-title">Мини-игры BloomVerse</h1>
 
+      {/* Карточка с выбором игры */}
       {!game && result === null && (
         <div className="game-card">
           <h2>Викторина про цветы</h2>
@@ -39,8 +48,17 @@ function Games() {
         </div>
       )}
 
-      {game === "quiz" && <Quiz onFinish={handleFinish} />}
+      {/* Викторина */}
+      {game === "quiz" && (
+        <>
+          <Quiz onFinish={handleFinish} />
+          <button className="exit-btn" onClick={handleExit}>
+            Выйти из игры
+          </button>
+        </>
+      )}
 
+      {/* Результат */}
       {result !== null && (
         <div className="result-card">
           <h2>Викторина завершена</h2>

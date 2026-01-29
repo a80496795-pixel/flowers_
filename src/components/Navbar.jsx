@@ -5,23 +5,25 @@ import { useNewFavorites } from "../context/NewFavoritesContext.jsx";
 import ThemeToggle from "./ThemeToggle";
 import "./Navbar.css";
 
-function Navbar({ theme, setTheme, onSearch }) {
+export default function Navbar({ theme, setTheme, onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const { user } = useAuth();
-  const { favorites } = useNewFavorites();
+  const { favorites = [] } = useNewFavorites();
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
     onSearch?.(searchTerm);
-    // На мобильных после поиска сворачиваем меню
-    setIsMenuOpen(false);
+    closeMenu();
   };
 
   return (
     <nav className="navbar">
       {/* LOGO */}
-      <Link to="/" className="logo">
+      <Link to="/" className="logo" onClick={closeMenu}>
         🌸 BloomVerse
       </Link>
 
@@ -38,7 +40,7 @@ function Navbar({ theme, setTheme, onSearch }) {
       {/* MOBILE TOGGLE */}
       <button
         type="button"
-        className={`nav-toggle ${isMenuOpen ? "nav-toggle--open" : ""}`}
+        className={`nav-toggle ${isMenuOpen ? "open" : ""}`}
         aria-label="Меню"
         onClick={() => setIsMenuOpen((prev) => !prev)}
       >
@@ -48,57 +50,24 @@ function Navbar({ theme, setTheme, onSearch }) {
       </button>
 
       {/* LINKS */}
-      <ul className={`nav-links ${isMenuOpen ? "nav-links--open" : ""}`}>
-        <li>
-          <Link to="/categories" onClick={() => setIsMenuOpen(false)}>
-            Категории
-          </Link>
-        </li>
-        <li>
-          <Link to="/habitat" onClick={() => setIsMenuOpen(false)}>
-            Среда
-          </Link>
-        </li>
-        <li>
-          <Link to="/redbook" onClick={() => setIsMenuOpen(false)}>
-            Красная книга
-          </Link>
-        </li>
-        <li>
-          <Link to="/news" onClick={() => setIsMenuOpen(false)}>
-            Новости
-          </Link>
-        </li>
-        <li>
-          <Link to="/games" onClick={() => setIsMenuOpen(false)}>
-            Мини-игра
-          </Link>
-        </li>
-        <li>
-          <Link to="register" onClick={() => setIsMenuOpen(false)}>
-             регистрация
-          </Link>
-        </li>
+      <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <li><Link to="/categories" onClick={closeMenu}>Категории</Link></li>
+        <li><Link to="/habitat" onClick={closeMenu}>Среда</Link></li>
+        <li><Link to="/redbook" onClick={closeMenu}>Красная книга</Link></li>
+        <li><Link to="/news" onClick={closeMenu}>Новости</Link></li>
+        <li><Link to="/games" onClick={closeMenu}>Мини-игра</Link></li>
+        <li><Link to="/register" onClick={closeMenu}>Регистрация</Link></li>
 
-        {user && (
-          <li>
-            <Link
-              to="/favorites"
-              className="fav-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ⭐ <span>{favorites.length}</span>
-            </Link>
-          </li>
-        )}
+       <li>
+  <Link to="/favorites" className="fav-link" onClick={closeMenu}>
+    ⭐ <span>{favorites?.length || 0}</span>
+  </Link>
+</li>
 
+        {/* LOGIN */}
         {!user && (
           <li>
-            <Link
-              to="/guest"
-              className="login-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <Link to="/guest" className="login-link" onClick={closeMenu}>
               Войти 🐰
             </Link>
           </li>
@@ -112,5 +81,3 @@ function Navbar({ theme, setTheme, onSearch }) {
     </nav>
   );
 }
-
-export default Navbar;

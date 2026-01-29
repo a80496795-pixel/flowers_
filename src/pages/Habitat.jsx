@@ -28,12 +28,7 @@ export default function Habitat() {
       <header className="header">
         <h1>BloomVerse</h1>
 
-        <input
-          type="text"
-          placeholder="Поиск цветка..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+      
       </header>
 
       <div className="filters">

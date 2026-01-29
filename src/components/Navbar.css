@@ -1,14 +1,20 @@
+/* ===== NAVBAR ===== */
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 14px 28px;
-    /* Палитра Мицури: розовый + салатовый */
     background: linear-gradient(120deg, #ffe4f1, #ffd1e8, #e4ffd8);
     box-shadow: 0 8px 22px rgba(214, 58, 91, 0.28);
     font-family: "Poppins", sans-serif;
     gap: 16px;
+    position: relative;
+    z-index: 1000;
 }
+
+
+/* ===== LOGO ===== */
 
 .logo {
     font-size: 22px;
@@ -17,6 +23,9 @@
     text-decoration: none;
     white-space: nowrap;
 }
+
+
+/* ===== SEARCH ===== */
 
 .nav-search {
     flex: 1;
@@ -32,13 +41,26 @@
     width: 220px;
     max-width: 100%;
     font-size: 14px;
+    transition: box-shadow 0.25s ease;
 }
+
+.nav-search input:focus {
+    box-shadow: 0 0 10px rgba(255, 95, 162, 0.35);
+}
+
+
+/* ===== LINKS ===== */
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: 18px;
     list-style: none;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
@@ -52,10 +74,29 @@
     color: #d63a5b;
 }
 
+
+/* ===== FAVORITES ===== */
+
 .fav-link {
     font-weight: 700;
-    color: #d63a5b;
+    color: #ff5fa2;
+    position: relative;
 }
+
+.fav-link span {
+    background: #ffe4f1;
+    color: #d63a5b;
+    padding: 2px 6px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    margin-left: 4px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(255, 95, 162, 0.35);
+    position: relative;
+}
+
+
+/* ===== LOGIN BUTTON ===== */
 
 .login-link {
     background: linear-gradient(135deg, #ff9acb, #b8f5ba);
@@ -65,7 +106,9 @@
     font-weight: 600;
 }
 
-/* MOBILE TOGGLE (hidden на десктопе) */
+
+/* ===== BURGER MENU ===== */
+
 .nav-toggle {
     display: none;
     border: none;
@@ -84,40 +127,70 @@
     transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.25s ease;
 }
 
-.nav-toggle--open span:nth-child(1) {
+.nav-toggle.open span:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
 }
 
-.nav-toggle--open span:nth-child(2) {
+.nav-toggle.open span:nth-child(2) {
     opacity: 0;
 }
 
-.nav-toggle--open span:nth-child(3) {
+.nav-toggle.open span:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* ========== ADAPTIVE ========== */
+
+/* ===== THEME TOGGLE ===== */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffe4f1, #e4ffd8);
+    transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(214, 58, 91, 0.25);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: #d63a5b;
+    transition: transform 0.25s ease, fill 0.25s ease;
+}
+
+.theme-toggle:hover svg {
+    transform: rotate(20deg);
+    fill: #2f7d57;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 900px) {
     .navbar {
         flex-wrap: wrap;
         align-items: flex-start;
     }
-
     .nav-search {
         order: 3;
         width: 100%;
         justify-content: stretch;
+        margin: 8px 0;
     }
-
     .nav-search input {
         width: 100%;
     }
-
     .nav-toggle {
         display: flex;
         margin-left: auto;
     }
-
     .nav-links {
         width: 100%;
         margin-top: 10px;
@@ -128,11 +201,10 @@
         max-height: 0;
         opacity: 0;
         transform: translateY(-8px);
-        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
     }
-
-    .nav-links--open {
-        max-height: 400px; /* достаточно для списка ссылок */
+    .nav-links.open {
+        max-height: 500px;
         opacity: 1;
         transform: translateY(0);
     }
@@ -142,8 +214,20 @@
     .navbar {
         padding: 10px 16px;
     }
-
     .logo {
         font-size: 18px;
+    }
+    .fav-link {
+        font-size: 1.1rem;
+    }
+    .fav-link span {
+        top: -6px;
+        right: -8px;
+        font-size: 0.7rem;
+        padding: 1px 5px;
+    }
+    .theme-toggle svg {
+        width: 18px;
+        height: 18px;
     }
 }
