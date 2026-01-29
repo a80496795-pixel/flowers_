@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css"
+// import "./footer.css"
 import { FaInstagram, FaWhatsapp, FaTelegram, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
