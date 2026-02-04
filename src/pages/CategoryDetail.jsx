@@ -3,6 +3,9 @@ import { flowerTypes } from "../data/flowerTypes";
 import "./CategoryDetail.css";
 
 export default function CategoryDetail() {
+
+
+
   const { id } = useParams();
 
   // Если параметр не передали – сразу показываем сообщение
@@ -22,10 +25,10 @@ export default function CategoryDetail() {
         <h2 className="not-found">🌱 Данные для этой {id} категории отсутствуют</h2>
       </div>
     );
-  } return (
+  } return (      
     <div className="category-details-bg">
       <h1 className="category-title">
-        🌸 {id} 🌸
+                      🌸 {id} 🌸
       </h1>
       <div className="category-grid">
         {categoryFlowers.map((flower) => (
@@ -33,7 +36,7 @@ export default function CategoryDetail() {
             <img src={flower.image} alt={flower.name} />
             <h2>{flower.name}</h2>
             <p>{flower.short}</p>
-            <p className="habitat">
+            <p className="habitat">                   
               <strong>Среда обитания:</strong> {flower.habitat}
             </p>
             <button className="details-btn">Подробнее</button>
@@ -43,3 +46,4 @@ export default function CategoryDetail() {
     </div>
   );
 }
+  export default CategoryDetail;        
